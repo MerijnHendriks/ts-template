@@ -7,7 +7,9 @@
     "repository": "https://github.com/MerijnHendriks/ts-template",
     "description": "Typescript project template",
     "scripts": {
-        "build": "npx tsc --outFile bin/Program.js",
+        "build": "npm run build:types && npm run build:js",
+        "build:types": "npx tsc --declaration --emitDeclarationOnly --outDir obj/",
+        "build:js": "npx tsc --outFile bin/Program.js",
         "doc": "npx typedoc src/Program.ts",
         "lint": "npx eslint --ext .ts --fix src/**/*.ts",
         "test": "node bin/Program.js"
@@ -18,6 +20,9 @@
         "@typescript-eslint/eslint-plugin": "^4.14.0",
         "@typescript-eslint/parser": "^4.14.0",
         "typedoc": "^0.20.0"
+    },
+    "typescript": {
+        "typings": "obj/Program.d.ts"
     },
     "eslintConfig": {
         "parser": "@typescript-eslint/parser",

@@ -1,8 +1,9 @@
 {
+    "files": [
+        "src/Program.ts"
+    ],
     "compilerOptions": {
         "target": "esnext",
-        "declaration": true,
-        "outDir": "bin/@types",
         "strict": true,
         "allowSyntheticDefaultImports": true,
         "removeComments": true
