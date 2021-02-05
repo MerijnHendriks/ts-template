@@ -9,51 +9,23 @@
     "scripts": {
         "doc": "typedoc src/Program.ts",
         "lint": "eslint --ext .ts --fix ./**/*.ts",
-        "type-check": "tsc --noEmit",
-        "build": "npm run build:types && npm run build:js",
-        "build:types": "tsc",
-        "build:js": "babel src --out-file bin/Program.js --extensions .ts --source-maps inline",
-        "test": "npm run build && node bin/Program.js"
+        "build": "npx tsc --outFile bin/Program.js",
+        "test": "node bin/Program.js"
     },
     "devDependencies": {
         "typescript": "^4.1.0",
-        "@babel/core": "^7.12.0",
-        "@babel/cli": "^7.12.0",
-        "@babel/preset-env": "^7.12.0",
-        "@babel/preset-typescript": "^7.12.0",
-        "@babel/plugin-proposal-class-properties": "^7.12.0",
-        "@babel/plugin-transform-typescript": "^7.12.0",
-        "@babel/eslint-parser": "^7.12.0",
-        "@babel/eslint-plugin": "^7.12.0",
+        "eslint": "^7.16.0",
         "@typescript-eslint/eslint-plugin": "^4.14.0",
         "@typescript-eslint/parser": "^4.14.0",
-        "eslint": "^7.16.0",
         "typedoc": "^0.20.0"
     },
-    "babel": {
-        "presets": [
-            "@babel/preset-env",
-            "@babel/preset-typescript"
-        ],
-        "plugins": [
-            "@babel/plugin-proposal-class-properties",
-            [
-                "@babel/plugin-transform-typescript",
-                {
-                    "allowNamespaces": true
-                }
-            ]
-        ]
-    },
     "eslintConfig": {
-        "parser": "@babel/eslint-parser",
+        "parser": "@typescript-eslint/parser",
         "plugins": [
-            "@babel",
             "@typescript-eslint"
         ],
         "extends": [
             "eslint:recommended",
-            "plugin:@typescript-eslint/eslint-recommended",
             "plugin:@typescript-eslint/recommended"
         ],
         "env": {

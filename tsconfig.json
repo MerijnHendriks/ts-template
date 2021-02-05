@@ -1,13 +1,11 @@
 {
     "compilerOptions": {
-        "target": "es2015",
-        "module": "commonjs",
+        "target": "esnext",
         "declaration": true,
-        "emitDeclarationOnly": true,
-        "outDir": "bin",
+        "outDir": "bin/@types",
         "strict": true,
         "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true
+        "removeComments": true
     },
     "include": [
         "src/*"

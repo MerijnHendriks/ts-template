@@ -6,15 +6,12 @@ Typescript project template
 
 **Command**          | **Function**
 -------------------- | ------------
-`npm run doc`        | ...
-`npm run lint`       | ...
-`npm run type-check` | ...
-`npm run build`      | ...
-`npm run test`       | ...
+`npm run lint`       | Lints .ts files for code style
+`npm run build`      | Generate a types and single js file from TS source
+`npm run test`       | Run generated js file
+`npm run doc`        | Generates html docs of your ts types
 
 ## References
 
 - [source code](https://www.typescriptlang.org/docs/handbook/namespaces.html)
-- [ts + babel](https://github.com/microsoft/TypeScript-Babel-Starter)
 - [ts + eslint](https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/)
-- [babel + eslint](https://stackoverflow.com/questions/63482553/declaring-babel-plugins-for-babel-eslint-parser-in-eslintrc)
