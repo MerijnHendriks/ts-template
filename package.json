@@ -7,9 +7,9 @@
     "repository": "https://github.com/MerijnHendriks/ts-template",
     "description": "Typescript project template",
     "scripts": {
-        "doc": "typedoc src/Program.ts",
-        "lint": "eslint --ext .ts --fix ./**/*.ts",
         "build": "npx tsc --outFile bin/Program.js",
+        "doc": "npx typedoc src/Program.ts",
+        "lint": "npx eslint --ext .ts --fix src/**/*.ts",
         "test": "node bin/Program.js"
     },
     "devDependencies": {

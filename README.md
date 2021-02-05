@@ -6,10 +6,10 @@ Typescript project template
 
 **Command**          | **Function**
 -------------------- | ------------
-`npm run lint`       | Lints .ts files for code style
 `npm run build`      | Generate a types and single js file from TS source
-`npm run test`       | Run generated js file
 `npm run doc`        | Generates html docs of your ts types
+`npm run lint`       | Lints .ts files for code style
+`npm run test`       | Run generated js file
 
 ## References
 
