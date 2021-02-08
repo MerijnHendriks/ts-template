@@ -2,6 +2,15 @@
 
 Typescript project template
 
+## Requirements
+
+- NodeJS
+
+## Setup
+
+1. `cd path/to/ts-template/`
+2. `npm install`
+
 ## Scripts
 
 **Command**          | **Function**
